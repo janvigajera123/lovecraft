@@ -2,53 +2,43 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="min-h-[90vh] flex items-center bg-gradient-to-b from-indigo-50 to-white">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+    <section className="bg-gradient-to-b from-indigo-50 to-white">
+      <div className="mx-auto grid min-h-[90vh] max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
 
-        {/* Left */}
         <div>
-
-          <span className="inline-block bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-semibold">
+          <span className="rounded-full bg-pink-100 px-4 py-2 text-sm font-semibold text-pink-600">
             ❤️ Preserve Every Precious Memory
           </span>
 
-          <h1 className="text-6xl font-bold mt-8 leading-tight text-gray-900">
+          <h1 className="mt-8 text-5xl font-bold leading-tight text-gray-900 lg:text-7xl">
             Create
             <span className="text-indigo-600"> Timeless </span>
             Digital Memories
           </h1>
 
-          <p className="text-gray-600 text-xl mt-6 leading-8">
-            Store photos, videos, letters and unforgettable moments in one
-            beautiful digital gift.
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Store your photos, videos, letters and unforgettable memories in
+            one beautiful digital gift.
           </p>
 
-          <div className="flex gap-5 mt-10">
-
-            <button className="bg-indigo-600 text-white px-7 py-4 rounded-xl flex items-center gap-2 hover:bg-indigo-700 transition">
+          <div className="mt-10 flex flex-wrap gap-4">
+            <button className="flex items-center gap-2 rounded-xl bg-indigo-600 px-8 py-4 font-semibold text-white hover:bg-indigo-700">
               Get Started
               <ArrowRight size={18} />
             </button>
 
-            <button className="border border-gray-300 px-7 py-4 rounded-xl hover:bg-gray-100 transition">
+            <button className="rounded-xl border px-8 py-4 font-semibold hover:bg-gray-100">
               Watch Demo
             </button>
-
           </div>
-
         </div>
 
-        {/* Right */}
         <div className="flex justify-center">
-
-          <div className="w-[420px] h-[420px] rounded-3xl bg-gradient-to-br from-indigo-500 to-pink-500 shadow-2xl flex items-center justify-center">
-
-            <h2 className="text-white text-3xl font-bold">
+          <div className="flex h-[420px] w-[420px] items-center justify-center rounded-[40px] bg-gradient-to-br from-indigo-600 to-pink-500 shadow-2xl">
+            <h2 className="text-4xl font-bold text-white">
               LoveCraft ❤️
             </h2>
-
           </div>
-
         </div>
 
       </div>
